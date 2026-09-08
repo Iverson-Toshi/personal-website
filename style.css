@@ -1,0 +1,321 @@
+/* =========================
+   GENERAL SETTINGS
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #07111F;
+    color: #F5F5F5;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+nav {
+    background-color: #0B1F3A;
+    color: #F5F5F5;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+    color: #D4AF37;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+
+/* =========================
+   HOME PAGE
+   ========================= */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome {
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    color: #D4AF37;
+}
+
+.home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #F5F5F5;
+}
+
+.home h1 span {
+    color: #D4AF37;
+}
+
+.intro {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #AAB4C3;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #D4AF37;
+    color: #07111F;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #F5F5F5;
+    color: #07111F;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+}
+
+.button.secondary:hover {
+    background-color: #D4AF37;
+    color: #07111F;
+}
+
+
+/* =========================
+   ABOUT ME PAGE
+   ========================= */
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.page > h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #F5F5F5;
+}
+
+.page h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #D4AF37;
+}
+
+.page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #AAB4C3;
+}
+
+
+/* =========================
+   HOBBIES PAGE
+   ========================= */
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.hobby {
+    background-color: #101D2E;
+    padding: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #0B1F3A;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+    border-color: #D4AF37;
+}
+
+.hobby h2 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.hobby p {
+    color: #AAB4C3;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container p {
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #101D2E;
+    padding: 30px;
+    border-radius: 10px;
+
+    border: 1px solid #0B1F3A;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #07111F;
+    color: #F5F5F5;
+
+    border: 1px solid #0B1F3A;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #D4AF37;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #D4AF37;
+    color: #07111F;
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #F5F5F5;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav div {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .hobby-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page > h1 {
+        font-size: 35px;
+    }
+}
