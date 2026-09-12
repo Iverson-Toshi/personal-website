@@ -26,18 +26,20 @@ body {
    ========================= */
 
 nav {
-    background-color: #0B1F3A;
-    color: #F5F5F5;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #FFFFFF;
     padding: 20px 50px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border-bottom: 1px solid #444444;
 }
 
 nav h2 {
     font-size: 24px;
-    color: #D4AF37;
+    color: #FFFFFF;
 }
 
 nav div {
@@ -46,14 +48,15 @@ nav div {
 }
 
 nav a {
-    color: #F5F5F5;
+    color: #CCCCCC;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 1px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #D4AF37;
+    color: #FFFFFF;
 }
 
 
@@ -74,27 +77,28 @@ nav a:hover {
 }
 
 .welcome {
-    font-size: 15px;
-    letter-spacing: 4px;
+    font-size: 13px;
+    letter-spacing: 5px;
     margin-bottom: 15px;
-    color: #D4AF37;
+    color: #AAAAAA;
 }
 
 .home h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    color: #F5F5F5;
+    color: #FFFFFF;
+    letter-spacing: -2px;
 }
 
 .home h1 span {
-    color: #D4AF37;
+    color: #FFFFFF;
 }
 
 .intro {
     max-width: 650px;
     font-size: 20px;
     line-height: 1.6;
-    color: #AAB4C3;
+    color: #CCCCCC;
 }
 
 .home-buttons {
@@ -111,32 +115,34 @@ nav a:hover {
 .button {
     display: inline-block;
 
-    background-color: #D4AF37;
-    color: #07111F;
+    background-color: #FFFFFF;
+    color: #000000;
 
     padding: 12px 25px;
-    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
 
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 1px;
 
     transition: 0.3s;
 }
 
 .button:hover {
-    background-color: #F5F5F5;
-    color: #07111F;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .button.secondary {
     background-color: transparent;
-    color: #D4AF37;
-    border: 2px solid #D4AF37;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 
 .button.secondary:hover {
-    background-color: #D4AF37;
-    color: #07111F;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 
@@ -160,13 +166,14 @@ nav a:hover {
 .page h2 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #D4AF37;
+    color: #FFFFFF;
+    letter-spacing: 1px;
 }
 
 .page p {
     font-size: 18px;
     margin-bottom: 40px;
-    color: #AAB4C3;
+    color: #BBBBBB;
 }
 
 
@@ -181,29 +188,27 @@ nav a:hover {
 }
 
 .hobby {
-    background-color: #101D2E;
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
 
-    border-radius: 10px;
-    border: 1px solid #0B1F3A;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+    border: 1px solid #444444;
 
     transition: 0.3s;
 }
 
 .hobby:hover {
     transform: translateY(-5px);
-    border-color: #D4AF37;
+    border-color: #FFFFFF;
 }
 
 .hobby h2 {
-    color: #D4AF37;
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
 .hobby p {
-    color: #AAB4C3;
+    color: #AAAAAA;
     margin-bottom: 0;
 }
 
