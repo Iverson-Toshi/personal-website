@@ -224,23 +224,26 @@ nav a:hover {
 
 .contact-container p {
     text-align: center;
+    color: #AAAAAA;
 }
 
 .contact-form {
-    background-color: #101D2E;
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
-    border-radius: 10px;
 
-    border: 1px solid #0B1F3A;
+    border-radius: 0;
+    border: 1px solid #444444;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 8px;
+
     font-weight: bold;
-    color: #F5F5F5;
+    color: #FFFFFF;
+    letter-spacing: 1px;
 }
 
 .contact-form input,
@@ -248,11 +251,11 @@ nav a:hover {
     width: 100%;
     padding: 12px;
 
-    background-color: #07111F;
-    color: #F5F5F5;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
 
-    border: 1px solid #0B1F3A;
-    border-radius: 5px;
+    border: 1px solid #444444;
+    border-radius: 0;
 
     margin-bottom: 20px;
 
@@ -263,7 +266,7 @@ nav a:hover {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #D4AF37;
+    border-color: #FFFFFF;
 }
 
 .contact-form textarea {
@@ -272,13 +275,13 @@ nav a:hover {
 }
 
 .contact-form button {
-    background-color: #D4AF37;
-    color: #07111F;
+    background-color: #FFFFFF;
+    color: #000000;
 
-    border: none;
+    border: 1px solid #FFFFFF;
     padding: 12px 25px;
 
-    border-radius: 5px;
+    border-radius: 0;
     font-size: 16px;
     font-weight: bold;
 
@@ -287,7 +290,8 @@ nav a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #F5F5F5;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 
