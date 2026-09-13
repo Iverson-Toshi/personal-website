@@ -70,10 +70,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    text-align: center;
-    padding: 30px;
+    text-align: left;
+    padding: 30px 8%;
 }
 
 .welcome {
