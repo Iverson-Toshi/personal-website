@@ -154,15 +154,16 @@ nav a:hover {
 
 .page {
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 70px 30px;
+    margin: 0;
+    padding: 70px 8%;
+    text-align: left;
 }
 
 .page > h1 {
-    text-align: center;
+    text-align: left;
     font-size: 45px;
     margin-bottom: 50px;
-    color: #F5F5F5;
+    color: #FFFFFF;
 }
 
 .page h2 {
@@ -177,7 +178,6 @@ nav a:hover {
     margin-bottom: 40px;
     color: #BBBBBB;
 }
-
 
 /* =========================
    HOBBIES PAGE
