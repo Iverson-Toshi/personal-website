@@ -229,6 +229,21 @@ nav a:hover {
     color: #AAAAAA;
 }
 
+.contact-info {
+    margin: 40px 0;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    color: #AAAAAA;
+    margin-bottom: 25px;
+}
+
 .contact-form {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 30px;
