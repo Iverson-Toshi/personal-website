@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,25 +24,112 @@
         </div>
     </nav>
 
-    <main class="home">
+    <!-- HOME TAB -->
+    <section id="home" class="tab-content">
 
-        <p class="welcome">WELCOME TO MY WEBSITE</p>
+        <main class="home">
 
-        <h1>Hello, I'm <span>Iverson!</span></h1>
+            <p class="welcome">WELCOME TO MY WEBSITE</p>
 
-        <p class="intro">
-            Welcome to my personal website.
-            Here you can learn more about me,
-            my hobbies, and my interests.
+            <h1>Hello, I'm <span>Iverson!</span></h1>
+
+            <p class="intro">
+                Welcome to my personal website.
+                Here you can learn more about me,
+                my hobbies, and my interests.
+            </p>
+
+            <div class="home-buttons">
+                <a class="button" href="about.html">About Me</a>
+                <a class="button secondary" href="hobbies.html">My Hobbies</a>
+                <button onclick="openTab('infographic')">
+                    Infographic
+                </button>
+            </div>
+
+        </main>
+
+    </section>
+
+    <!-- INFOGRAPHIC TAB -->
+    <section id="infographic" class="tab-content">
+
+        <h1>HOW THE INTERNET OF THINGS WORKS</h1>
+
+        <p class="subtitle">
+            Understanding how connected devices communicate.
         </p>
 
-        <div class="home-buttons">
-            <a class="button" href="about.html">About Me</a>
-            <a class="button secondary" href="hobbies.html">My Hobbies</a>
+        <div class="iot-cloud">
+            <h2>INTERNET OF THINGS</h2>
+            <p>
+                IoT connects physical devices to the internet,
+                allowing them to collect and exchange information.
+            </p>
         </div>
 
-    </main>
+        <div class="explanation-container">
+
+            <div class="explanation">
+                <span class="number">01</span>
+                <h2>Devices and Sensors</h2>
+                <p>
+                    Sensors collect information such as temperature,
+                    humidity, and movement.
+                </p>
+            </div>
+
+            <div class="explanation">
+                <span class="number">02</span>
+                <h2>Connectivity</h2>
+                <p>
+                    Devices transmit collected information through
+                    Wi-Fi, Bluetooth, or other networks.
+                </p>
+            </div>
+
+            <div class="explanation">
+                <span class="number">03</span>
+                <h2>Data Processing</h2>
+                <p>
+                    A computer or cloud server processes and
+                    analyzes the collected information.
+                </p>
+            </div>
+
+            <div class="explanation">
+                <span class="number">04</span>
+                <h2>User Interface</h2>
+                <p>
+                    Users view information and monitor their
+                    connected devices through an application.
+                </p>
+            </div>
+
+        </div>
+
+        <button onclick="openTab('home')">Back to Home</button>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function openTab(tabName) {
+
+            let tabs = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(function(tab) {
+                tab.style.display = "none";
+            });
+
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Show homepage when website opens
+        openTab('home');
+
+    </script>
 
 </body>
-
 </html>
