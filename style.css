@@ -23,6 +23,23 @@ body {
 }
 
 
+body::before {
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: -1;
+}
+
+
 /* =========================
    NAVIGATION BAR
    ========================= */
@@ -178,6 +195,7 @@ nav a:hover {
     margin-bottom: 40px;
     color: #BBBBBB;
 }
+
 
 /* =========================
    HOBBIES PAGE
@@ -345,6 +363,153 @@ nav a:hover {
     .hobby-container {
         grid-template-columns: 1fr;
     }
+
+    .page > h1 {
+        font-size: 35px;
+    }
+}
+
+/* INFOGRAPHIC */
+
+.tab-content {
+    display: none;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.tab-content h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.subtitle {
+    color: #AAAAAA;
+}
+
+/* CENTRAL CLOUD */
+
+.iot-cloud {
+    position: relative;
+    background: white;
+    color: black;
+
+    width: 320px;
+    max-width: 80%;
+    padding: 35px 25px;
+
+    border-radius: 50px;
+    margin: 100px auto 130px;
+
+    z-index: 1;
+}
+
+.iot-cloud::before,
+.iot-cloud::after {
+    content: "";
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.iot-cloud::before {
+    width: 120px;
+    height: 120px;
+    top: -45px;
+    left: 35px;
+}
+
+.iot-cloud::after {
+    width: 140px;
+    height: 140px;
+    top: -55px;
+    right: 30px;
+}
+
+.iot-cloud h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.iot-cloud p {
+    font-size: 14px;
+}
+
+/* EXPLANATION BOXES */
+
+.explanation-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px 40px;
+}
+
+.explanation {
+    position: relative;
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid #666666;
+    padding: 25px;
+}
+
+/* ARROWS */
+
+.explanation::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 65px;
+    background: white;
+    top: -65px;
+    left: 50%;
+}
+
+/* ARROW HEAD */
+
+.explanation::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: calc(50% - 5px);
+
+    width: 9px;
+    height: 9px;
+
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+
+    transform: rotate(45deg);
+}
+
+/* TEXT */
+
+.number {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.explanation h2 {
+    color: white;
+    font-size: 21px;
+}
+
+.explanation p {
+    color: #AAAAAA;
+    font-size: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .explanation-container {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .iot-cloud {
+        margin-bottom: 100px;
+    }
+
+}
 
     .page > h1 {
         font-size: 35px;
