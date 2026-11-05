@@ -574,16 +574,13 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-
     margin-top: 60px;
 }
 
 .my-understanding-box {
     background: rgba(0, 0, 0, 0.85);
     border: 1px solid #666666;
-
     padding: 35px;
-
     text-align: left;
 }
 
@@ -605,12 +602,10 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* MOBILE - FRONT-END DEVELOPMENT */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
     .my-understanding-container {
         grid-template-columns: 1fr;
     }
-
 }
