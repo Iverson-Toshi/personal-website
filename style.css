@@ -615,18 +615,3 @@ nav a:hover {
     }
 
 }
-
-/* INITIAL UI - FRONT-END AND BACK-END */
-
-#development {
-    background: white;
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-    text-align: left;
-    padding: 8px;
-}
-
-/* Remove the existing decorative styling */
-#development * {
-    all: revert;
-}
